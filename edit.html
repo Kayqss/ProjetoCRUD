@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Editar jogo</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <style>
+      /* Estilos específicos que a pagina de edição de jogo utiliza */
+      #edit-game-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      #edit-game-form input {
+        margin-bottom: 10px;
+        width: 50%;
+      }
+
+      #edit-game-form button {
+        margin-bottom: 10px;
+        width: 50%;
+      }
+    </style>
+    <!-- Importando a fonte do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h2>Editar jogo</h2>
+    <!-- Campo para editar um jogo existente -->
+    <form id="edit-game-form">
+      <!-- Textbox para editar o nome do jogo -->
+      <input type="text" id="name" placeholder="Novo nome" />
+      <!-- Textbox para editar a descrição do jogo -->
+      <input type="text" id="description" placeholder="Nova descrição" />
+      <!-- Textbox para editar o preço do jogo -->
+      <input
+        type="number"
+        id="price"
+        placeholder="Novo valor R$"
+        step="0.01"
+        class="price-input"
+      />
+      <!-- Botão para salvar alterações feitas -->
+      <button type="submit">Salvar alteracoes</button>
+      <!-- Botão para voltar para a home -->
+      <button type="button" onclick="goHome()">Voltar</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>

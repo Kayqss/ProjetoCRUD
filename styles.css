@@ -1,0 +1,76 @@
+/* Estilos do corpo da página */
+body {
+  font-family: "Inter", sans-serif; 
+  background-color: #f8f8ff; 
+  color: #101010; 
+  margin: 20px; 
+}
+
+/* Estilos para o formulário de jogo */
+#game-form {
+  margin-bottom: 20px; 
+}
+
+/* Estilos para a biblioteca de jogos */
+#game-library {
+  display: flex; /* Layout flexivel */
+  flex-wrap: wrap; /* Permite que os cards fiquem em várias linhas */
+}
+
+/* Estilos para cada card de jogo individual */
+.game-card {
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.16), 0 0px 0px rgba(0, 0, 0, 0.23); 
+  border-radius: 10px;
+  margin: 10px; 
+  padding: 10px; 
+  width: 250px; 
+  display: flex;
+  flex-direction: column; /* Itens do card em colunqa */
+  justify-content: space-between; /* espeçamento padrao entre os itens */
+}
+
+/* Estilos para o conteiner do botão */
+.button-container {
+  display: flex; 
+  justify-content: space-evenly; /* Distribui os botões igualmente ao longo da linha */
+}
+
+/* Estilos para o preço do jogo */
+.game-price {
+  font-weight: bold; 
+  font-size: 30px; 
+}
+
+/* Estilos para os botões */
+button {
+  background-color: #101010;
+  color: white; 
+  padding: 12px 20px; 
+  text-align: center; 
+  display: inline-block; /* Permite que o botão seja disposto em linha */
+  font-size: 16px; 
+  margin: 2px 0px; 
+  cursor: pointer; /* Muda o cursor para um ponteiro quando passa sobre o botão */
+  border-radius: 100px;
+  font-family: "Inter", sans-serif; 
+  font-weight: bold; 
+}
+
+/* Estilos para os textbox de texto e número */
+input[type="text"],
+input[type="number"] {
+  background-color: #e5e5f7; 
+  width: 15%; 
+  padding: 12px 20px; 
+  display: inline-block; 
+  font-size: 16px; 
+  border: 0px; 
+  border-radius: 10px;
+  box-sizing: border-box; 
+}
+
+/* Estilos para os campos de entrada de texto e número quando estão em foco */
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border: 1px solid #101010; /* Adiciona uma borda mais grossa quando esta selecionado */
+}
